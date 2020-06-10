@@ -13,6 +13,7 @@
 		76F951002490857900C9C149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F950FF2490857900C9C149 /* Assets.xcassets */; };
 		76F951032490857900C9C149 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76F951022490857900C9C149 /* Preview Assets.xcassets */; };
 		76F951062490857900C9C149 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76F951042490857900C9C149 /* LaunchScreen.storyboard */; };
+		76F9510E2490869900C9C149 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F9510D2490869900C9C149 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		76F951022490857900C9C149 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76F951052490857900C9C149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76F951072490857900C9C149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76F9510D2490869900C9C149 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				76F950F92490856D00C9C149 /* AppDelegate.swift */,
 				76F950FB2490856E00C9C149 /* SceneDelegate.swift */,
 				76F950FD2490856E00C9C149 /* ContentView.swift */,
+				76F9510D2490869900C9C149 /* CustomTextField.swift */,
 				76F950FF2490857900C9C149 /* Assets.xcassets */,
 				76F951042490857900C9C149 /* LaunchScreen.storyboard */,
 				76F951072490857900C9C149 /* Info.plist */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76F9510E2490869900C9C149 /* CustomTextField.swift in Sources */,
 				76F950FA2490856D00C9C149 /* AppDelegate.swift in Sources */,
 				76F950FC2490856E00C9C149 /* SceneDelegate.swift in Sources */,
 				76F950FE2490856E00C9C149 /* ContentView.swift in Sources */,
