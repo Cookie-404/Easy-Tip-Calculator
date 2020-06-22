@@ -44,11 +44,9 @@ struct CustomTextField: UIViewRepresentable {
         
         func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool{
             
-            let currText  = textField.text! + string
-           // print(currText)
+            _  = textField.text! + string
+      
             
-            textDidChange(text: currText)
-
             return true
             
         }
@@ -56,6 +54,8 @@ struct CustomTextField: UIViewRepresentable {
     }
     
 }
+
+
 
 
 
