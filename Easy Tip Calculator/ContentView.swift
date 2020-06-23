@@ -38,6 +38,7 @@ class Tip: ObservableObject {
 struct ContentView: View {
     
     @ObservedObject var tip = Tip()
+    @State var showSettings = false
  
     var body: some View {
         
@@ -68,6 +69,31 @@ struct ContentView: View {
             Color(#colorLiteral(red: 0.157455951, green: 0.5721796155, blue: 0.9853222966, alpha: 0.7995237586))
                 .edgesIgnoringSafeArea(.all)
             
+        
+        VStack {
+            HStack{
+                
+                Button(action: {
+                    self.showSettings.toggle()
+                }) {
+                    Image(systemName: "sun.max.fill")
+                        .foregroundColor(Color.white)
+                        .frame(maxWidth: 50, maxHeight: 50)
+                        .font(.system(size: 30))
+                }
+                .sheet(isPresented: $showSettings){
+                    SettingsView()
+                }
+            }
+            .frame(maxWidth: 50, maxHeight: 50)
+            .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)).opacity(0.5))
+            .cornerRadius(15)
+            .shadow(color: Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)).opacity(0.9), radius: 1.5, x: 0, y: 1)
+            .offset(x: 150, y: 20)
+            Spacer()
+        }
+        
+
             TextView(amount: binding)
             
             ScrollView(.horizontal, showsIndicators: false) {
@@ -132,6 +158,7 @@ struct TextView: View {
                     .keyboardType(.numberPad)
                     .font(.system(size: 21, weight: .bold, design: .serif))
                     .frame(height: 50)
+        
                     
                 
                 //CustomTextField(text: $amount)
